@@ -7,6 +7,7 @@ import PlaceOrder from "./Pages/PlaceOrder/PlaceOrder";
 import Footer from "./Components/Footer/Footer";
 import LoginPopup from "./Components/LoginPopup/LoginPopup";
 import Verify from "./Pages/verify/Verify";
+import MyOrders from "./Pages/MyOrders/MyOrders";
 
 const App = () => {
   const [showLogin ,setShowLogin] = useState(false);
@@ -23,6 +24,7 @@ const App = () => {
           <Route path="/order" element={<PlaceOrder />} />
           <Route path="*" element={<h1>404 Not Found</h1>} />
           <Route path="/verify" element={<Verify />} />
+          <Route path="/myorders" element={<MyOrders />} />
          </Routes>
       </div>
       <Footer />
